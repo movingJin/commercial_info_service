@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>Commercial analysis</title>
+    <meta name="viewport" content="width=device-width">
+    
+    
+    
+    <style>
+      	body{
+  			font-size:12px;
+		}
+		.home_img{
+			max-width:1000px;
+  			height:auto;
+		}
+		.home_logo{
+			position: absolute; top:75%; left:45%;
+			width: 200px;
+			height: 100px;
+			align: left;
+		}
+		.home_start{
+			position: absolute; top:80%; left:50%;
+			width: 100px;
+			height: 100px;
+			align: left;
+		}
+		.container{
+  			min-width:320px; /* 최솟값 */
+  			max-width:1280px; /* 최댓값 */
+  			background:#ddd;
+  			margin:0 auto;
+  			overflow:hidden;
+		}
+		.container:after,
+		.body:after{
+  			content:'';
+  			display:block;
+  			clear:both; /* 콘테이너 영역의 높이 값 보정 */
+		}
+		
+
+		main,
+		nav,
+		aside{margin-bottom:15px;overflow:hidden;}
+		main{background:#ffffff;min-height:450px; position: relative;}
+		nav{background:#bbb;min-height:200px;}
+		aside{background:#aaa;min-height:200px;}
+
+		@media (min-width:768px) and (max-width:1024px){
+  			.home_img{
+  			max-width:1200px;
+  			height:auto;
+			}
+		}
+
+		@media (min-width:1025px){
+			.home_img{
+  			max-width:1280px;
+  			height:auto;
+			}
+			main{background:#ffffff;min-height:800px;position: relative;}
+			.home_logo{
+			position: absolute; top:50%; left:70%;
+			width: 300px;
+			height: 200px;
+			}
+  		}
+    </style>
+
+    
+    
+    
+    
+  </head>
+
+  <body translate="no" >
+
+    <div class="container">
+  	<div class="body">
+    	<main>
+      <!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody -->
+      		
+				<img style="position: absolute;" class="home_img" src="http://52.78.123.217/img/building.jpeg">
+
+      			<img class="home_logo" src="http://52.78.123.217/img/logo.png" onclick=" location='map_html.html'" >
+      			
+				
+				<!--<input class="home_start" value="start" type="button" onclick=" location='map_html.html'"/>-->
+				
+    	</main>
+    	<aside>
+      		<h2 style="float:right;">↑글자를 클릭하세요</h2>
+    	</aside>
+  	</div>
+	</div>
+    
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+       <!-- <script>
+      	jQuery(function($){
+
+  			// min, max, current
+  			$('body').prepend('<p><output class="min">Min=<strong>320</strong>px</output>; <output class="max">Max=<strong>1280</strong>px</output>; <output class="current">Current=<strong></strong>px;</output></p>');
+
+  			// set max, set current
+  			$(window).resize(function(){
+    		$('body').find('.current>strong').text($(this).width());
+  			}).resize();
+
+		});
+      //# sourceURL=pen.js
+    	</script>-->
+
+    
+    
+  </body>
+</html>
+ 

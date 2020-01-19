@@ -1,0 +1,143 @@
+<DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>Commercial analysis</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/03.css">
+    <style>
+
+	.div_wrap
+	{background-color:#32b5e3;
+    height:45px;
+  }
+
+	.div_wrap2
+	{
+		background-color:#dbfbb8;
+	}
+
+	input[type="button"]
+	{
+		height:30px;
+		width : 100px;
+		background:#32b5e3;
+		border-radius:2px;
+		font-family :"휴먼모음T";
+		font-color: white;
+		font-size:1rem;
+		color : white;
+	}
+
+
+   </style>
+    
+  </head>
+
+  <body translate="no" >
+
+    <div class="container">
+	<div class = "div_wrap">
+  <center>
+    <h1 style="padding-left:1%;padding-top:5px;"><a href="http://52.78.123.217/index.html"  style='text-decoration:none'><font color = "white"> Commercial info</font></a></h1>
+  </center>
+</div>
+<div style="background:#ffffff;height:5px;" >
+</div>
+<div class = "body">
+    <main>
+<div>
+      <div style="margin-top:10px;padding-left:1%;"> 
+        &nbsp;&nbsp;
+
+        <input type="button" id="address_search" value="주소 검색">&nbsp;&nbsp;
+        <select id="rq_type_select">
+            <option value="">업종선택</option>
+            <option value="경양식">경양식</option>
+            <option value="김밥(도시락)">김밥(도시락)</option>
+            <option value="분식">분식</option>
+            <option value="뷔페식">뷔페식</option>
+            <option value="생선회">생선회</option>
+            <option value="식육">식육</option>
+            <option value="일식">일식</option>
+            <option value="중국식">중국식</option>
+            <option value="통닭(치킨)">통닭(치킨</option>
+            <option value="패스트푸드">패스트푸드</option>
+            <option value="한식">한식</option>
+            <option value="호프">호프</option>
+            <option value="회집">회집</option>
+        </select><br>&nbsp;&nbsp;
+        <input type="text" id="sample5_address" size="43" placeholder="주소" readonly/><br/><br/>&nbsp;&nbsp;
+        <input type="button" id="restaurant_info" value="유사사업장">&nbsp;&nbsp;
+        <input type="button" id="subway_info" value="가까운 역">&nbsp;&nbsp;
+        <input type="button" id="population_info" value="유동인구"><br>
+   
+    
+
+       &nbsp;&nbsp;
+            <table id="search_table" border="1" cellpadding="5" cellspacing="0">
+               <thead>
+                  <tr>
+                     <td>동종 사업장의 수<font size = "1" color = "gray">(개수)</font></td>
+                     <td>폐업률<font size = "1" color = "gray">(%)</font></td>
+                     <td>평당 임대가<font size = "1" color = "gray">(만)</font></td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td id="t_1">0</td>
+                     <td id="t_2">0</td>
+                     <td id="t_3">0</td>
+                  </tr>
+                  
+               </tbody>
+            </table>
+     <div id="map" style="width:350px;height:400px;margin-top:10px;display:none;margin-left:1%;clear:both;"></div>
+        
+        <div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:100;-webkit-overflow-scrolling:touch;">
+        <img src="//i1.daumcdn.net/localimg/localimages/07/postcode/320/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1"  alt="닫기 버튼">
+        
+    </main>
+
+    <!--<nav>
+        <h1>네비게이션</h1>
+    </nav>-->
+    <aside>
+        <div id="chart_div"></div>
+    </aside>
+  </div>
+
+  
+    <!-- JavaScript at the bottom for fast page loading -->
+    <!-- Grab jQuery from Google -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+   
+
+
+       
+
+    <!-- 스크립트, 다음지도 -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    
+    <!--<script src="//apis.daum.net/maps/maps3.js?apikey=9320c56ee33196e508cf81dd9fd17f3b&libraries=services"></script>-->
+    <!--<script src="//apis.daum.net/maps/maps3.js?apikey=
+e60aa97af0a96705454e93be864aa155&libraries=services"></script>-->
+    <script src="//apis.daum.net/maps/maps3.js?apikey=
+9320c56ee33196e508cf81dd9fd17f3b&libraries=services"></script>
+    
+    <!-- 다음지도에 유사업종-->
+    <script src="js/main.js"></script>
+    <script src="js/population.js"></script>
+    <!-- 유동인구 그래프 애니메이션 
+    <script src="js/03.js"></script>--> 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  
+   
+  </body>
+</html>
+

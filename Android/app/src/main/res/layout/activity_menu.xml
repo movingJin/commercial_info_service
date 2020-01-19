@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:paddingTop="2dip"
+        android:layout_height="180dip"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:hint="장소, 주소"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_search"
+                android:layout_marginLeft="20dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="3dp"
+                android:singleLine="true"/>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btFindAddr"
+                android:background="@drawable/maginifier_button"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="업종"
+                android:id="@+id/btType" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조회"
+                android:id="@+id/btInquire"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="도움말"
+            android:id="@+id/btHelp" />
+        </TableRow>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_city"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageView" />
+
+    </RelativeLayout>
+
+</LinearLayout>
